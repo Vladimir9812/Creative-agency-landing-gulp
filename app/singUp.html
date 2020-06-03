@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Creative agency</title>
+</head>
+<body>
+    <header class="header fixed">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo"><a href="index.html">Bouncy</a></div>
+                <nav class="nav" id="nav">
+                    <a class = "nav__link nav__link--exit" href="index.html">Exit</a>
+                </nav>
+                <div class="nav__toggle"></div>
+            </div>
+        </div>
+    </header>
+    <div class="form-block">
+        <div class="container">
+            <h3 class="form__title">Sign up for an account</h3>
+            <p class="form__text">Signing up for an account is free and easy. Fill out the form below to get started. 
+                JavaScript is required to to continue.</p>
+                <form class="formEnter">
+                    <div class="input__item">
+                        <label for="username">Username</label>
+                        <input type="text" name="username">
+                        <p class="error__input"></p>
+                    </div>
+                    <div class="input__item">
+                        <label for="password">Password (4 characters minimum)</label>
+                        <input class = "inputForm" type="password" 
+                            name="password"
+                            data-invalid
+                            data-length
+                            data-error = "4 characters minimum"
+                        >
+                        <p class="error__input"></p>
+                    </div>
+                    <div class="input__item">
+                        <label for="telephone">Telephone</label>
+                        <input class = "inputForm" type="number" 
+                            name="telephone"
+                            placeholder="+7"
+                            data-invalid
+                            data-regExp
+                            data-error = "Invalid Telephone number entered"
+                        >
+                        <p class="error__input"></p>
+                    </div>
+                    <div class="input__item">
+                        <label for="email">Email</label>
+                        <input class = "inputForm" type="email" 
+                            name="email"
+                            data-invalid
+                            data-regExp
+                            data-error = "Invalid email address entered"
+                        >
+                        <p class="error__input"></p>
+                    </div>
+                    <p class="form__text">By clicking the "Sign up" button below, I certify that I have read and agree to the TMDb terms of use and privacy policy.</p>
+                    <input class = "buttonForm" type="submit" value="Sign Up" disabled>
+                    <a href="index.html" class="cancel">Cancel</a>
+                </form>
+        </div>
+    </div>
+<script src="js/form.js"></script>
+</body>
+</html>
